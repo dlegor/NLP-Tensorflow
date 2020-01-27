@@ -1,0 +1,234 @@
+A/B testing
+A statistical way of comparing two (or more) techniques, typically an incumbent against a new rival. A/B testing aims to determine not only which technique performs better but also to understand whether the difference is statistically significant. A/B testing usually considers only two techniques using one measurement, but it can be applied to any finite number of techniques and measures.
+
+accuracy
+The fraction of predictions that a classification model got right. In multi-class classification, accuracy is defined as follows:
+
+In binary classification, accuracy has the following definition:
+
+See true positive and true negative.
+
+action
+#rl
+In reinforcement learning, the mechanism by which the agent transitions between states of the environment. The agent chooses the action by using a policy.
+
+activation function
+A function (for example, ReLU or sigmoid) that takes in the weighted sum of all of the inputs from the previous layer and then generates and passes an output value (typically nonlinear) to the next layer.
+
+active learning
+A training approach in which the algorithm chooses some of the data it learns from. Active learning is particularly valuable when labeled examples are scarce or expensive to obtain. Instead of blindly seeking a diverse range of labeled examples, an active learning algorithm selectively seeks the particular range of examples it needs for learning.
+
+AdaGrad
+A sophisticated gradient descent algorithm that rescales the gradients of each parameter, effectively giving each parameter an independent learning rate. For a full explanation, see this paper.
+
+agent
+#rl
+In reinforcement learning, the entity that uses a policy to maximize expected return gained from transitioning between states of the environment.
+
+agglomerative clustering
+See hierarchical clustering.
+
+AR
+Abbreviation for augmented reality.
+
+area under the PR curve
+See PR AUC (Area under the PR Curve).
+
+area under the ROC curve
+See AUC (Area under the ROC curve).
+
+artificial general intelligence
+A non-human mechanism that demonstrates a broad range of problem solving, creativity, and adaptability. For example, a program demonstrating artificial general intelligence could translate text, compose symphonies, and excel at games that have not yet been invented.
+
+artificial intelligence
+A non-human program or model that can solve sophisticated tasks. For example, a program or model that translates text or a program or model that identifies diseases from radiologic images both exhibit artificial intelligence.
+
+Formally, machine learning is a sub-field of artificial intelligence. However, in recent years, some organizations have begun using the terms artificial intelligence and machine learning interchangeably.
+
+attribute
+#fairness
+Synonym for feature. In fairness, attributes often refer to characteristics pertaining to individuals.
+
+AUC (Area under the ROC Curve)
+An evaluation metric that considers all possible classification thresholds.
+
+The Area Under the ROC curve is the probability that a classifier will be more confident that a randomly chosen positive example is actually positive than that a randomly chosen negative example is positive.
+
+augmented reality
+A technology that superimposes a computer-generated image on a user's view of the real world, thus providing a composite view.
+
+automation bias
+#fairness
+When a human decision maker favors recommendations made by an automated decision-making system over information made without automation, even when the automated decision-making system makes errors.
+
+average precision
+A metric for summarizing the performance of a ranked sequence of results. Average precision is calculated by taking the average of the precision values for each relevant result (each result in the ranked list where the recall increases relative to the previous result).
+
+See also Area under the PR Curve.
+
+B
+backpropagation
+The primary algorithm for performing gradient descent on neural networks. First, the output values of each node are calculated (and cached) in a forward pass. Then, the partial derivative of the error with respect to each parameter is calculated in a backward pass through the graph.
+
+bag of words
+A representation of the words in a phrase or passage, irrespective of order. For example, bag of words represents the following three phrases identically:
+
+the dog jumps
+jumps the dog
+dog jumps the
+Each word is mapped to an index in a sparse vector, where the vector has an index for every word in the vocabulary. For example, the phrase the dog jumps is mapped into a feature vector with non-zero values at the three indices corresponding to the words the, dog, and jumps. The non-zero value can be any of the following:
+
+A 1 to indicate the presence of a word.
+A count of the number of times a word appears in the bag. For example, if the phrase were the maroon dog is a dog with maroon fur, then both maroon and dog would be represented as 2, while the other words would be represented as 1.
+Some other value, such as the logarithm of the count of the number of times a word appears in the bag.
+baseline
+A model used as a reference point for comparing how well another model (typically, a more complex one) is performing. For example, a logistic regression model might serve as a good baseline for a deep model.
+
+For a particular problem, the baseline helps model developers quantify the minimal expected performance that a new model must achieve for the new model to be useful.
+
+batch
+The set of examples used in one iteration (that is, one gradient update) of model training.
+
+See also batch size.
+
+batch normalization
+Normalizing the input or output of the activation functions in a hidden layer. Batch normalization can provide the following benefits:
+
+Make neural networks more stable by protecting against outlier weights.
+Enable higher learning rates.
+Reduce overfitting.
+batch size
+The number of examples in a batch. For example, the batch size of SGD is 1, while the batch size of a mini-batch is usually between 10 and 1000. Batch size is usually fixed during training and inference; however, TensorFlow does permit dynamic batch sizes.
+
+Bayesian neural network
+A probabilistic neural network that accounts for uncertainty in weights and outputs. A standard neural network regression model typically predicts a scalar value; for example, a model predicts a house price of 853,000. By contrast, a Bayesian neural network predicts a distribution of values; for example, a model predicts a house price of 853,000 with a standard deviation of 67,200. A Bayesian neural network relies on Bayes' Theorem to calculate uncertainties in weights and predictions. A Bayesian neural network can be useful when it is important to quantify uncertainty, such as in models related to pharmaceuticals. Bayesian neural networks can also help prevent overfitting.
+
+Bellman equation
+#rl
+In reinforcement learning, the following identity satisfied by the optimal Q-function:
+
+Reinforcement learning algorithms apply this identity to create Q-learning via the following update rule:
+
+Beyond reinforcement learning, the Bellman equation has applications to dynamic programming. See the Wikipedia entry for Bellman Equation.
+
+bias (ethics/fairness)
+#fairness
+1. Stereotyping, prejudice or favoritism towards some things, people, or groups over others. These biases can affect collection and interpretation of data, the design of a system, and how users interact with a system. Forms of this type of bias include:
+
+automation bias
+confirmation bias
+experimenter’s bias
+group attribution bias
+implicit bias
+in-group bias
+out-group homogeneity bias
+2. Systematic error introduced by a sampling or reporting procedure. Forms of this type of bias include:
+
+coverage bias
+non-response bias
+participation bias
+reporting bias
+sampling bias
+selection bias
+Not to be confused with the bias term in machine learning models or prediction bias.
+
+bias (math)
+An intercept or offset from an origin. Bias (also known as the bias term) is referred to as b or w0 in machine learning models. For example, bias is the b in the following formula:
+
+Not to be confused with bias in ethics and fairness or prediction bias.
+
+bigram
+An N-gram in which N=2.
+
+binary classification
+A type of classification task that outputs one of two mutually exclusive classes. For example, a machine learning model that evaluates email messages and outputs either "spam" or "not spam" is a binary classifier.
+
+binning
+See bucketing.
+
+boosting
+A machine learning technique that iteratively combines a set of simple and not very accurate classifiers (referred to as "weak" classifiers) into a classifier with high accuracy (a "strong" classifier) by upweighting the examples that the model is currently misclassfying.
+
+bounding box
+In an image, the (x, y) coordinates of a rectangle around an area of interest, such as the dog in the image below.
+
+Photograph of a dog sitting on a sofa. A green bounding box
+          with top-left coordinates of (275, 1271) and bottom-right
+          coordinates of (2954, 2761) circumscribes the dog's body
+
+broadcasting
+Expanding the shape of an operand in a matrix math operation to dimensions compatible for that operation. For instance, linear algebra requires that the two operands in a matrix addition operation must have the same dimensions. Consequently, you can't add a matrix of shape (m, n) to a vector of length n. Broadcasting enables this operation by virtually expanding the vector of length n to a matrix of shape (m,n) by replicating the same values down each column.
+
+For example, given the following definitions, linear algebra prohibits A+B because A and B have different dimensions:
+
+A = [[7, 10, 4],
+     [13, 5, 9]]
+B = [2]
+
+However, broadcasting enables the operation A+B by virtually expanding B to:
+
+ [[2, 2, 2],
+  [2, 2, 2]]
+
+Thus, A+B is now a valid operation:
+
+[[7, 10, 4],  +  [[2, 2, 2],  =  [[ 9, 12, 6],
+ [13, 5, 9]]      [2, 2, 2]]      [15, 7, 11]]
+
+See the following description of broadcasting in NumPy for more details.
+
+bucketing
+Converting a (usually continuous) feature into multiple binary features called buckets or bins, typically based on value range. For example, instead of representing temperature as a single continuous floating-point feature, you could chop ranges of temperatures into discrete bins. Given temperature data sensitive to a tenth of a degree, all temperatures between 0.0 and 15.0 degrees could be put into one bin, 15.1 to 30.0 degrees could be a second bin, and 30.1 to 50.0 degrees could be a third bin.
+
+C
+calibration layer
+A post-prediction adjustment, typically to account for prediction bias. The adjusted predictions and probabilities should match the distribution of an observed set of labels.
+
+candidate generation
+The initial set of recommendations chosen by a recommendation system. For example, consider a bookstore that offers 100,000 titles. The candidate generation phase creates a much smaller list of suitable books for a particular user, say 500. But even 500 books is way too many to recommend to a user. Subsequent, more expensive, phases of a recommendation system (such as scoring and re-ranking) whittle down those 500 to a much smaller, more useful set of recommendations.
+
+candidate sampling
+A training-time optimization in which a probability is calculated for all the positive labels, using, for example, softmax, but only for a random sample of negative labels. For example, if we have an example labeled beagle and dog candidate sampling computes the predicted probabilities and corresponding loss terms for the beagle and dog class outputs in addition to a random subset of the remaining classes (cat, lollipop, fence). The idea is that the negative classes can learn from less frequent negative reinforcement as long as positive classes always get proper positive reinforcement, and this is indeed observed empirically. The motivation for candidate sampling is a computational efficiency win from not computing predictions for all negatives.
+
+categorical data
+Features having a discrete set of possible values. For example, consider a categorical feature named house style, which has a discrete set of three possible values: Tudor, ranch, colonial. By representing house style as categorical data, the model can learn the separate impacts of Tudor, ranch, and colonial on house price.
+
+Sometimes, values in the discrete set are mutually exclusive, and only one value can be applied to a given example. For example, a car maker categorical feature would probably permit only a single value (Toyota) per example. Other times, more than one value may be applicable. A single car could be painted more than one different color, so a car color categorical feature would likely permit a single example to have multiple values (for example, red and white).
+
+Categorical features are sometimes called discrete features.
+
+Contrast with numerical data.
+
+centroid
+The center of a cluster as determined by a k-means or k-median algorithm. For instance, if k is 3, then the k-means or k-median algorithm finds 3 centroids.
+
+centroid-based clustering
+A category of clustering algorithms that organizes data into nonhierarchical clusters. k-means is the most widely used centroid-based clustering algorithm.
+
+Contrast with hierarchical clustering algorithms.
+
+checkpoint
+Data that captures the state of the variables of a model at a particular time. Checkpoints enable exporting model weights, as well as performing training across multiple sessions. Checkpoints also enable training to continue past errors (for example, job preemption). Note that the graph itself is not included in a checkpoint.
+
+class
+One of a set of enumerated target values for a label. For example, in a binary classification model that detects spam, the two classes are spam and not spam. In a multi-class classification model that identifies dog breeds, the classes would be poodle, beagle, pug, and so on.
+
+classification model
+A type of machine learning model for distinguishing among two or more discrete classes. For example, a natural language processing classification model could determine whether an input sentence was in French, Spanish, or Italian. Compare with regression model.
+
+classification threshold
+A scalar-value criterion that is applied to a model's predicted score in order to separate the positive class from the negative class. Used when mapping logistic regression results to binary classification. For example, consider a logistic regression model that determines the probability of a given email message being spam. If the classification threshold is 0.9, then logistic regression values above 0.9 are classified as spam and those below 0.9 are classified as not spam.
+
+class-imbalanced dataset
+A binary classification problem in which the labels for the two classes have significantly different frequencies. For example, a disease dataset in which 0.0001 of examples have positive labels and 0.9999 have negative labels is a class-imbalanced problem, but a football game predictor in which 0.51 of examples label one team winning and 0.49 label the other team winning is not a class-imbalanced problem.
+
+clipping
+A technique for handling outliers. Specifically, reducing feature values that are greater than a set maximum value down to that maximum value. Also, increasing feature values that are less than a specific minimum value up to that minimum value.
+
+For example, suppose that only a few feature values fall outside the range 40–60. In this case, you could do the following:
+
+Clip all values over 60 to be exactly 60.
+Clip all values under 40 to be exactly 40.
+In addition to bringing input values within a designated range, clipping can also used to force gradient values within a designated range during training.
+
+Cloud TPU
